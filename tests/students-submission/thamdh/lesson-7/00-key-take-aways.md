@@ -1,0 +1,1 @@
+Mình gửi ảnh đính kèm nha! Nếu khó nhìn thì thầy cô không cần chấm cũng không sao nha ạ!

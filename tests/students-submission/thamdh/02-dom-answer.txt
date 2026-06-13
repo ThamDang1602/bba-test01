@@ -1,0 +1,79 @@
+Giả sử bạn đang đứng tại vị trí của
+//div[@id='child']. Hãy liệt kê:
+
+a. Các phần tử con (child)
+//div[@id='child']/child::*
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required="">
+
+b. Các phần tử cha (parent): 
+//div[@id='child']/parent::*
+    <form id="registrationForm">
+
+c. Các phần tử hậu duệ (descendant): 
+//div[@id='child']/descendant::*
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required="">
+
+d. Các phần tử tổ tiên (ancestor):
+//div[@id='child']/ancestor::*
+    <form id="registrationForm">
+
+e. Các phần tử anh em (sibling)
+//div[@id='child']/preceding-sibling::*
+    <div class="form-group" id="parent">
+
+//div[@id='child']/following-sibling::*
+    <div class="form-group">    
+    <div class="form-group">
+    <div class="form-group">
+Góc thắc mắc: Câu e này khác gì câu i và h nhỉ? Vì thấy bị trùng nên mình thử với //div[@id='child']/sibling::* thì không ra kết quả gì cả.
+Nhờ mentor hoặc trợ giảng giải đáp giúp e/c nha!
+
+
+f. Các phần tử phía sau (following)
+//div[@id='child']/following::*
+<div class="form-group">
+    <label for="gender">Gender:</label>
+    <div style="width: 70%; display: flex; justify-content: space-between;">
+      <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label nostyle="" for="male">Male</label>
+      </div>
+      <div>
+        <input type="radio" id="female" name="gender" value="female">
+        <label nostyle="" for="female">Female</label>
+<div class="form-group">
+    <label for="hobbies">Hobbies:</label>
+    <div style="width: 70%; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <div>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label nostyle="" for="reading">Reading</label>
+      </div>
+      <div>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label nostyle="" for="traveling">Traveling</label>
+      </div>
+      <div>
+        <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+        <label nostyle="" for="cooking">Cooking</label>
+ <div class="form-group">
+    <button type="submit">Register</button>
+
+g. Các phần tử phía trước (preceding)
+//div[@id='child']/preceding::*
+    <form id="registrationForm">
+    -> cái này được coi là tổ tiên nên sẽ không phải ạ. Mình ghi vào để confirm cho chắc chắn.
+    <div class="form-group" id="parent">
+    <label for="username" id="preceding">Username:</label>
+    <input type="text" id="username" name="username" required="">
+
+i. Các phần tử anh em phía trước cùng cấp (preceding-sibling)
+//div[@id='child']/preceding-sibling::*
+    <div class="form-group" id="parent">
+
+h. Các phần tử anh em phía sau cùng cấp (following-sibling)
+//div[@id='child']/following-sibling::*
+    <div class="form-group">    
+    <div class="form-group">
+    <div class="form-group">

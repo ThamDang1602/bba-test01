@@ -1,0 +1,1 @@
+Chị nộp ở file ảnh đính kèm. Khó nhìn nên thầy cô không chấm cũng không sao nha ạ.
